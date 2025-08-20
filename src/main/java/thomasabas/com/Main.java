@@ -3,21 +3,35 @@ package thomasabas.com;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+//    public static void main(String[] args) {
+//        // 1. GeoDrill Company
+//        int[] Numbers = {300, 450, 120, 800, 540, 760, 310, 900, 500, 620};
+//
+//        int maxValue = Numbers[0];
+//        int MaxIndex = 0;
+//        for (int i = 0; i < Numbers.length; i++) {
+//                if (Numbers[i] >maxValue){
+//                    maxValue= Numbers[i];
+//                    MaxIndex= i ;
+//
+//                }
+//
+//        }
+//        System.out.println("Highest discovery: " + maxValue + " barrels at position " + MaxIndex);
+//    }
+
     public static void main(String[] args) {
-        // 1. GeoDrill Company
-        int[] Numbers = {300, 450, 120, 800, 540, 760, 310, 900, 500, 620};
-
-        int maxValue = Numbers[0];
-        int MaxIndex = 0;
-        for (int i = 0; i < Numbers.length; i++) {
-                if (Numbers[i] >maxValue){
-                    maxValue= Numbers[i];
-                    MaxIndex= i ;
-
-                }
+        // (CoastalRefine Ltd
+        int[] litres = {200, 800, 1500, 2000, 1750, 1400, 1650};
+        int total = 0;
+        for (int i = 0; i < litres.length; i++) {
+            total += litres[i];
 
         }
-        System.out.println("Highest discovery: " + maxValue + " barrels at position " + MaxIndex);
+        if (total > 1000){
+            System.out.println("ALERT: Capacity Exceeded!");
+        }
     }
+
 
 }
